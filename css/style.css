@@ -1,14 +1,8 @@
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #e8eef2;
@@ -48,8 +42,16 @@ header{
     top: 30%;
     transform: translateY(-30%);
 }
+.title h1::after{
+    content: '';
+    margin: 10px auto;
+    width: 400px;
+    height: 4px;
+    background: currentColor;
+    display: block;
+}
 .title p{
-    font-size: 1em;
+    font-size: 1.2em;
     position: relative;
     top: 40%;
     font-weight: bold;
@@ -118,5 +120,16 @@ header{
     background:#c7d3dd ;
     justify-content: center;
     text-align: center;
+}
+.button{
+  margin: 5px;
+  right: 10px;
+  bottom: 2px;
+  position: sticky;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000000;
 }
 
