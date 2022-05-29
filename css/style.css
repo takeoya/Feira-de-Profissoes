@@ -1,3 +1,9 @@
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 *{
     margin: 0;
     padding: 0;
@@ -78,6 +84,7 @@ header{
     border: #000000 solid;
     font-weight: bold;
     font-size: 20px;
+    transition: 0.3s;
 }
 .content img{
     top: 5px;
@@ -85,6 +92,14 @@ header{
     height: auto;
     position: inherit;
     margin: auto;
+}
+.content:hover{
+    height:15vh ;
+}
+a{
+    position: relative;
+    text-decoration: none;
+    color: #c7d3dd;
 }
 .sobre{
     height: 60vh;
