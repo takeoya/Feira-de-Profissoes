@@ -14,15 +14,6 @@ body{
     background-color: #e8eef2;
     font-family:  'Bahnschrift Condensed';
 }
-/*header{
-    position: relative;
-    /*overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: black;
-}*/
 .top{
     position: relative;
     top: 0px;
@@ -33,7 +24,7 @@ body{
 .slides{
     width: 600%;
     height: 100%;
-    animation: slid 40s infinite ease-out;
+    /*animation: slid 40s infinite ease-out;*/
     display: flex;
 }
 .title{
@@ -44,6 +35,7 @@ body{
     /*position: relative;*/
     color: #c7d3dd;
     font-family:  'Bahnschrift Condensed';
+    /*animation: slid 40s infinite ease-out;*/
 }
 .title h1{
     font-size: 50px;
@@ -65,43 +57,49 @@ body{
     position: relative;
     top: 40%;
     font-weight: bold;
+    transition: .8s;
 }
 .sh{
     background-color: #002773;
     width:20%;
+    transition: .8s;
 }
 .ah{
     background-color: #A1B0AB;
     width:20%;
+    transition: .8s;
 }
 .eh{
     background-color: #e8eef2;
     width:20%;
+    transition: .8s;
 }
 .uh{
     background-color: #000000;
     width:20%;
+    transition: .8s;
 }
 .ph{
     background-color: #c7d3dd;
     width:20%;
+    transition: .8s;
 }
-@keyframes slid{
+/*@keyframes slid{
     0%{margin-left: 0;}
     12%{margin-left: 0;}
-    16%{margin-left: -100%;}
-    28%{margin-left: -100%;}
-    32%{margin-left: -200%;}
-    44%{margin-left: -200%;}
-    48%{margin-left: -300%;}
-    60%{margin-left: -300%;}
-    64%{margin-left: -400%;}
-    76%{margin-left: -400%;}
-    80%{margin-left: -500%;}
-    84%{margin-left: -500%;}    
+    16%{margin-left: -20%;}
+    28%{margin-left: -20%;}
+    32%{margin-left: -40%;}
+    44%{margin-left: -40%;}
+    48%{margin-left: -60%;}
+    60%{margin-left: -60%;}
+    64%{margin-left: -80%;}
+    76%{margin-left: -80%;}
+    80%{margin-left: -100%;}
+    84%{margin-left: -100%;}    
     92%{margin-left: 0;}
     100%{margin-left:0}
-}
+}*/
 .navigation{
     position: absolute;
     bottom: 20px;
