@@ -33,7 +33,7 @@ body{
 .slides{
     width: 600%;
     height: 100%;
-    animation: slid 40s infinite 0.4s ease-out;
+    animation: slid 40s infinite ease-out;
     display: flex;
 }
 .title{
@@ -102,6 +102,47 @@ body{
     92%{margin-left: 0;}
     100%{margin-left:0}
 }
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+.bar:hover{
+    background-color: #fff ;
+}
+input{
+    display: none;
+}
+#slide1:checked ~ .title{
+    margin-left: 0;
+}
+#slide2:checked ~ .title{
+    margin-left: -20%;
+}
+#slide3:checked ~ .title{
+    margin-left: -40%;
+}
+#slide4:checked ~ .title{
+    margin-left: -60%;
+}
+#slide5:checked ~ .title{
+    margin-left: -80%;
+}
+#slide6:checked ~ .title{
+    margin-left: -100%;
+}
+
 .nav{
     position: relative;
     display: flex;
