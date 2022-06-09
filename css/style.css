@@ -59,8 +59,22 @@ body{
     font-weight: bold;
 }
 .sh{
-    background-color: #002773;
+    /*background-color: #002773;*/
+    display: flex;
     width:20%;
+}
+.p1{
+    width: 50%;
+    height: 100%;
+    background-color: #353535;
+}
+.p2{
+    width: 50%;
+    height: 100%;
+    background-color: #064d8c;
+}
+.scontent h1{
+    color: #097be0;
 }
 .ah{
     background-color: #A1B0AB;
