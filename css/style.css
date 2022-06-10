@@ -113,6 +113,7 @@ body{
     height: 80%;
 }
 .more{
+    cursor: pointer;
     margin-top: 10%;
     width: 100px;
     height: 40px;
