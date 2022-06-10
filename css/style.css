@@ -58,6 +58,7 @@ body{
     top: 40%;
     font-weight: bold;
 }
+/*sobre*/
 .sh{
     /*background-color: #002773;*/
     display: flex;
@@ -71,23 +72,34 @@ body{
 .p2{
     width: 50%;
     height: 100%;
-    background-color: #064d8c;
+    background: url('../imgs/blue.jpg');
+    /*background-color: #064d8c;*/
 }
-.scontent h1{
+.so{
     color: #097be0;
+    font-size: 4rem;
 }
+.sot{
+    margin-top: 5%;
+    color: #c7d3dd;
+    font-size: 1.5rem;
+}
+/*áreas*/
 .ah{
     background-color: #A1B0AB;
     width:20%;
 }
+/*especializações*/
 .eh{
     background-color: #e8eef2;
     width:20%;
 }
+/*universidades*/
 .uh{
     background-color: #000000;
     width:20%;
 }
+/*pos-graduação*/
 .ph{
     background-color: #c7d3dd;
     width:20%;
@@ -99,6 +111,26 @@ body{
     transform: translate(-50%, -50%);
     width: 90%;
     height: 80%;
+}
+.more{
+    margin-top: 10%;
+    width: 100px;
+    height: 40px;
+    border-radius:15px ;
+    text-align: center;
+    border: solid #e8eef2 2px ;
+    background-color: #097be0;
+}
+.direct{
+    width: 100px;
+    color: #02152b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.l{
+    position: relative;
+    top:28%;
 }
 /*@keyframes slid{
     0%{margin-left: 0;}
