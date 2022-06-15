@@ -33,7 +33,6 @@ body{
     width:20%;
     /*position: relative;*/
     color: #c7d3dd;
-    font-family:  monospace;
     transition: .8s;
     /*animation: slid 40s infinite ease-out;*/
 }
@@ -42,6 +41,7 @@ body{
     text-transform: uppercase;
     position: relative;
     top: 30%;
+    font-family: 'Bahnschrift Condensed';
     transform: translateY(-30%);
 }
 .title h1::after{
@@ -56,6 +56,7 @@ body{
     font-size: 1.2em;
     position: relative;
     top: 40%;
+    font-family: monospace;
     font-weight: bold;
 }
 /*sobre*/
@@ -82,6 +83,7 @@ body{
 .sot{
     margin-top: 5%;
     color: #c7d3dd;
+    font-family: monospace;
     font-size: 1.5rem;
 }
 /*áreas*/
@@ -191,7 +193,7 @@ input{
 }
 
 .nav{
-    position: relative;
+    position: sticky;
     display: flex;
     margin: 0;
     width: 100%;
@@ -218,18 +220,24 @@ section{
     position: relative;
     z-index: -1;
 }
+.content{
+    margin: auto;
+    width: 90%;
+    height: 80%;
+    text-align: left;
+}
+/*as informações sobre o curso*/
 .sobre{
     height: 60vh;
     display: flex;
     background:#02152b ;
     justify-content: center;
-    text-align: center;
 }
-.content{
-  margin: auto;
-  width: 90%;
-  height: 80%;
+.sobre p{
+    color: #c7d3dd;
+    padding: 5px;
 }
+/*informações das áreas e mercado de trabalho*/
 .areas{
     height: 60vh;
     display: flex;
@@ -237,6 +245,7 @@ section{
     justify-content: center;
     text-align: center;
 }
+/*especializações*/
 .esp{
     height: 60vh;
     display: flex;
@@ -244,6 +253,7 @@ section{
     justify-content: center;
     text-align: center;
 }
+/*universidades*/
 .uni{
     height: 60vh;
     display: flex;
@@ -251,10 +261,15 @@ section{
     justify-content: center;
     text-align: center;
 }
+/*pos-graduação*/
 .pos{
     height: 60vh;
     display: flex;
     background:#02152b ;
     justify-content: center;
     text-align: center;
+}
+.content h1{
+    color: #c7d3dd;
+    font-size: 3rem;
 }
