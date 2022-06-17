@@ -245,6 +245,10 @@ section{
     justify-content: center;
     text-align: center;
 }
+.areas p{
+    color: #c7d3dd;
+    padding: 5px;
+}
 /*especializações*/
 .esp{
     height: 60vh;
