@@ -221,18 +221,18 @@ input{
 }
 section{
     position: relative;
-    z-index: -1;
 }
 .content{
+    overflow: hidden;
     position: relative;
-    margin: auto;
+    padding-top:40px;
     width: 80%;
     height: 90%;
     text-align: left;
 }
 /*as informações sobre o curso*/
 .sobre{
-    height: 80vh;
+    height: 100%;
     display: flex;
     background:#02152b ;
     justify-content: center;
@@ -253,7 +253,7 @@ section{
     height: 80%;
 }
 .imgcont{
-    width: 50%;
+    width: 60%;
     height: 80%;
     /*background: url('../imgs/gemini.png') no-repeat center center;*/
 }
@@ -261,13 +261,166 @@ section{
     width: 100%;
 }
 .textcont{
-    width: 50%;
+    width: 40%;
     height: 100%;
     margin-left: 12px;
 }
+.collapsible{
+    margin: auto;
+    max-width: 450px;
+    overflow: hidden;
+    font-weight: 500;
+}
+.collapsible label{  
+    position: relative;
+    font-weight: 600; 
+    background: #fff;
+    box-shadow: 0 5px 11px 0 #353535;
+    color: #02152b;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer ;
+    padding: 15px;
+    border-radius: 4px;  
+    z-index: 1;
+}
+.collapsible input{
+    display: none;
+}
+.collapsible label::after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+    background: url('../imgs/arrow2.png') no-repeat 0 0;
+    background-size: cover;
+    transition: all 0.3s ease;
+}
+.collapsible input:checked + label::after{
+    transform:rotate(180deg) ;
+} 
+.collapsible-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.2;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+.collapsible input:checked ~ .collapsible-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 #353535;
+    opacity: 1;
+    top: 0;
+}
+.collapsible-text h2{
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: #02152b;
+}
+.collapsible-text p{
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #02152b;
+}
+.curso-collap{
+    margin: auto;
+    margin-top: 10px;
+    max-width: 450px;
+    overflow: hidden;
+    font-weight: 500;
+}
+.curso-collap label{  
+    position: relative;
+    font-weight: 600; 
+    background: #fff;
+    box-shadow: 0 5px 11px 0 #353535;
+    color: #02152b;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer ;
+    padding: 15px;
+    border-radius: 4px;  
+    z-index: 1;
+}
+.curso-collap input{
+    display: none;
+}
+.curso-collap label::after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+    background: url('../imgs/arrow2.png') no-repeat 0 0;
+    background-size: cover;
+    transition: all 0.3s ease;
+}
+.curso-collap input:checked + label::after{
+    transform:rotate(180deg) ;
+} 
+.curso-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.2;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+.curso-collap input:checked ~ .curso-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 #353535;
+    opacity: 1;
+    top: 0;
+}
+.curso-text h2{
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: #02152b;
+}
+.curso-text p{
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #02152b;
+}
+.grade{
+    margin-top: 4%;
+    width: 100%;
+    height: 100%;
+}
+.grade h2 {
+    padding: 2px;
+    font-size: 2rem;
+    color: #c7d3dd;
+}
+.grade p{
+    color: #c7d3dd;
+}
+.grade-c{
+    border: solid #000826 3px ;
+    border-radius: 4px;
+    column-count: 4;
+    background-color: #fff;
+}
+.grade-c p{
+    color: #02152b;
+}
 /*informações das áreas e mercado de trabalho*/
 .areas{
-    height: 60vh;
+    height: 100%;
     display: flex;
     background:#02152b ;
     justify-content: center;
