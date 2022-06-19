@@ -71,7 +71,7 @@ body{
 .p1{
     width: 50%;
     height: 100%;
-    background-color: #353535;
+    background-color: #202020;
 }
 .p2{
     width: 50%;
@@ -85,8 +85,8 @@ body{
 }
 .sot{
     margin-top: 5%;
-    color: #c7d3dd;
-    font-family: monospace;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
 }
 /*áreas*/
@@ -122,9 +122,12 @@ body{
     margin-top: 10%;
     width: 100px;
     height: 40px;
-    border-radius:15px ;
+    border-radius:20px ;
     text-align: center;
-    border: solid #e8eef2 2px ;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 600;
+    border: solid #000000 2px ;
     background-color: #097be0;
 }
 .direct{
@@ -132,11 +135,6 @@ body{
     color: #02152b;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem;
-}
-.l{
-    position: relative;
-    top:28%;
 }
 /*@keyframes slid{
     0%{margin-left: 0;}
@@ -221,6 +219,11 @@ input{
 }
 section{
     position: relative;
+}
+.division{
+    position: absolute;
+    height: 20%;
+    background: #e8eef2;
 }
 .content{
     overflow: hidden;
@@ -414,10 +417,12 @@ section{
     border-radius: 4px;
     column-count: 4;
     background-color: #fff;
+    margin-bottom: 4%;
 }
 .grade-c p{
     color: #02152b;
 }
+
 /*informações das áreas e mercado de trabalho*/
 .areas{
     height: 100%;
@@ -429,6 +434,55 @@ section{
 .areas p{
     color: #c7d3dd;
     padding: 5px;
+}
+.area-info{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.area-text{
+    background: #ccdbdc ;
+    margin-top: 6px;
+    width: 40%;
+    height: 100%;
+    border: solid #003e85 3px;
+    border-radius: 5px;
+}
+.area-text p{
+    color: #02152b;
+}
+.area-text-cont{
+    padding: 5px;
+    margin: auto;
+    width: 90%;
+}
+.startup{
+    position: relative;
+    margin: auto;
+    margin-left: 5%;
+    width: 60%;
+    height: 100%;
+}
+.startup img{
+    width: 100%;
+}
+.startup-text{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0.5);
+    color: #fff;
+}
+.startup-textcont{
+    /*position: relative;*/ 
+    margin: auto;
+    margin-top: 10%;
+    width: 70%;
+    height: 80%;
+}
+.startup-textcont p{
+    font-size: 1rem;
 }
 /*especializações*/
 .esp{
