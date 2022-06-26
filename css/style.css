@@ -40,11 +40,11 @@ body{
     /*animation: slid 40s infinite ease-out;*/
 }
 .title h1{
-    font-size: 50px;
+    font-size: 5rem;
     text-transform: uppercase;
     position: relative;
     top: 30%;
-    font-family: 'Bahnschrift Condensed';
+    font-family: 'Stick No Bills', sans-serif;;
     transform: translateY(-30%);
 }
 .title h1::after{
@@ -101,7 +101,7 @@ body{
 }
 /*universidades*/
 .uh{
-    background-color: #000000;
+    background-color: #ff9045;
     width:20%;
 }
 /*pos-graduação*/
@@ -485,44 +485,99 @@ section{
 .startup-textcont p{
     font-size: 1rem;
 }
+.uni-area{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 /*universidades*/
 .uni{
-    height: 60vh;
+    height: 100%;
     display: flex;
     background:#02152b ;
     justify-content: center;
-    text-align: center;
-}
-.uni-content{
-    overflow: hidden;
-    position: relative;
-    width: 70%;
-    height: 100%;
     text-align: left;
 }
-.universidades{
-    width: 700%;
-    height: 100%;
-    animation: slid 40s infinite ease-out;
-    background: rgb(255, 246, 232);
-    display: flex;
+.container{
+    position: relative;
+    width: 1375px;
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
-.all-uni{
-    width: 14.3%;
+.container .box{
+    position: relative;
+    width: 275px;
+    height: 275px;
+    overflow: hidden;
+    transition: .5s;
 }
-.h-uni{
+.container .box:hover{
+    z-index: 1;
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+}
+.container .box .unibx{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 15%;
-    border-bottom: solid #000000 2px;
-    text-align: center;
+    height: 100%;
 }
-.img-uni{
-    height: 45%;
-    border-bottom: solid #000000 2px;
+.container .box .unibx::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(180deg, #4ea1ff,#000);
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: .5s;
 }
-.s-uni{
-    height: 40%;
-    border-bottom: solid #000000 2px;
+.container .box:hover .unibx::before{
+    opacity: 1;
+}
+.container .box .unibx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container .box .uni-cont{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+}
+.container .box .uni-cont h2{
+    color: #fff;
+    transition: .6s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(300px);
+}
+.container .box:hover .uni-cont h2{
+    transform: translateY(0);
+    transition-delay: .5s;
+}
+.container .box .uni-cont p{
+    color: #fff;
+    transform: translateY(300px);
+    transition: .6s;
+    font-size: 14px;
+}
+.container .box:hover .uni-cont p{
+    transform: translateY(0);
+    transition-delay: .6s;
 }
 
 /*especializações*/
