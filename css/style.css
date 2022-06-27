@@ -10,12 +10,36 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+    width: 1em;
+    background: #02152b;
+}
+::-webkit-scrollbar-track{
+  background: hsl(200 50% 10% / 1);
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(8, 31, 72);
+    border: 0.2em solid rgb(0, 65, 176);
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(11, 71, 174);
+    border: 0.2em solid rgb(6, 32, 78);
+}
+.vertical-scroll::-webkit-scrollbar-thumb:hover{
+    background: rgb(110, 110, 110);
+    border: 0.2em solid rgb(6, 32, 78);
+}
 :root{
     --font:'Bahnschrift Condensed'
 }
 body{
     background-color: #e8eef2;
     font-family:  'Bahnschrift Condensed';
+    /*font-family: 'Oswald', sans-serif;
+    font-weight: 400;*/
 }
 .top{
     position: relative;
@@ -238,6 +262,7 @@ section{
     height: 100%;
     display: flex;
     background:#02152b ;
+    /*background: linear-gradient(180deg, #022752,#02152b);*/
     justify-content: center;
 }
 .sobre p{
@@ -446,8 +471,9 @@ section{
     margin-top: 6px;
     width: 40%;
     height: 100%;
-    border: solid #003e85 3px;
-    border-radius: 5px;
+    border: solid #00152c 3px;
+    border-radius: 4px;
+    margin: auto;
 }
 .area-text p{
     color: #02152b;
@@ -456,6 +482,26 @@ section{
     padding: 5px;
     margin: auto;
     width: 90%;
+}
+.vertical-scroll {
+    display: grid;
+    gap: 0.5em;
+    grid-auto-flow: column;
+    grid-auto-columns: 75%;
+    padding: 0.5em;
+    overflow-x: scroll;
+    background: #051434;
+    border-radius: 1em;
+    margin-top: 5px;
+    position: relative;
+}
+  
+.vertical-scroll > div {
+    background: #0f223f;
+    border-radius: 0.2em;
+    border: 0.1em solid rgb(0, 10, 31);
+    padding: 1em;
+    color: #fff;
 }
 .startup{
     position: relative;
@@ -502,7 +548,7 @@ section{
     width: 1375px;
     display:flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
 }
 .container .box{
     position: relative;
@@ -580,23 +626,119 @@ section{
     transition-delay: .6s;
 }
 
-/*especializações*/
-.esp{
-    height: 60vh;
+/*pos-graduação*/
+.pos{
+    height: 100%;
     display: flex;
     background:#02152b ;
     justify-content: center;
     text-align: center;
 }
-/*pos-graduação*/
-.pos{
-    height: 60vh;
-    display: flex;
-    background:#02152b ;
-    justify-content: center;
-    text-align: center;
+.pos-text{
+    margin-block: 5%;
+    color: #ccdbdc;
+    column-count:3;
+}
+.pos-eng{
+    color: #fff;
+}
+.pos-eng-text{
+    margin-top: 2%;
+    margin-bottom: 6%;
+    color: #ccdbdc;
+    column-count:2;
 }
 .content h1{
     color: #c7d3dd;
     font-size: 3rem;
+}
+/*footer*/
+.footer{
+    position: relative;
+    height: auto;
+    width: 100%;
+    /*background:linear-gradient(180deg, #02152b,#111111);*/
+    font-family: 'Open Sans';
+    padding-top: 40px;
+    background: #111111;
+    align-items: center;
+    color: #fff;
+}
+.footer-cont{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-cont h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+.footer-cont p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #111111;
+}
+.socials a{
+    text-decoration: none;
+}
+.git{
+    background: url('../imgs/git.png') center center;
+    background-size: cover;
+    transition: .5s;
+}
+.git:hover{
+    background: url('../imgs/git.png') center center rgb(133, 133, 133);
+    background-size:contain;
+}
+.insta{
+    background: url('../imgs/insta2.png') no-repeat center center;
+    background-size: 70%;
+    transition: .5s;
+}
+.insta:hover{
+    background: url('../imgs/insta2.png') no-repeat center center #D02D90;
+    background-size: 70%;
+}
+.ink{
+    background: url('../imgs/linkedin.png') no-repeat center center;
+    background-size: 70%;
+    transition: .5s;
+}
+.ink:hover{
+    background: url('../imgs/linkedin.png') no-repeat center center #0A66C2;
+    background-size: 70%;
+}
+.footer-pe{
+    width: 100%;
+    padding: 20px 0;
+    background: #000000;
+    text-align: center;    
+}
+.footer-pe p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
 }
